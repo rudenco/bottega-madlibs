@@ -8,7 +8,29 @@
     border: 1px solid red;
     box-shadow: 0 4px 20px 0 rgba(20,100,0,0.6);
     border-radius: 20px;
+
+    display: grid;
+    grid-template-rows: 1fr 50px;
+
+    &__inputs {
+        display:grid;
+        background-color: skyblue;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: repeat(4,1fr);
+    }
 } 
+
+.input {
+    &__title {
+
+    }
+    input {
+
+    }
+    &__number {
+
+    }
+}
 
 b {
     border: 1px solid red;
