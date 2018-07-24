@@ -63,10 +63,9 @@
 
     display: grid;
     grid-template-rows: 1fr 50px;
-
+    background-color: whitesmoke;
     &__inputs {
         display:grid;
-        background-color: skyblue;
         grid-template-rows: repeat(4,1fr);
         grid-template-columns: repeat(4,1fr);
         justify-items: center;
@@ -76,16 +75,35 @@
 
 .input {
     display:grid;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 700;
     //grid-template-rows: 1fr 1fr 1fr 1fr; 
     grid-template-columns: [number-s] 26px [number-e input-s] 1fr [input-e];
     &__title {
        grid-column: input-s/input-e;
+       border-top: 2px solid #B71614;
+       font-size: 15px;
     }
     input {
         grid-column: input-s/input-e;
+        //border-color: aquamarine;
+        border: none;
+        width: 190px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: 'Montserrat'; 
     }
     &__number {
         grid-column: number-s/number-e;
+        background-color: #00cb79;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 8%;
+        color: white;
+        font-family: 'Montserrat';
     }
 }
 
