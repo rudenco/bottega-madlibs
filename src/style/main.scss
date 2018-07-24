@@ -64,12 +64,17 @@
     display: grid;
     grid-template-rows: 1fr 50px;
     background-color: whitesmoke;
+    
     &__inputs {
         display:grid;
-        grid-template-rows: repeat(4,1fr);
+        grid-template-rows: repeat(4,27px);
         grid-template-columns: repeat(4,1fr);
         justify-items: center;
-        align-items: center;
+        align-items: center;    
+        grid-row-gap: 110px;
+        margin-top: 66px;
+        margin-left: 83px;
+        margin-right: 83px;
     }
 } 
 
@@ -77,14 +82,17 @@
     display:grid;
     text-align: center;
     font-family: 'Montserrat';
-    font-style: italic;
     font-weight: 700;
+    height: 47px;
     //grid-template-rows: 1fr 1fr 1fr 1fr; 
     grid-template-columns: [number-s] 26px [number-e input-s] 1fr [input-e];
+    grid-column-gap: 8px;
+
     &__title {
        grid-column: input-s/input-e;
-       border-top: 2px solid #B71614;
        font-size: 15px;
+       font-style: italic;
+       margin-top: 6px;
     }
     input {
         grid-column: input-s/input-e;
@@ -95,6 +103,14 @@
         font-size: 15px;
         font-weight: 600;
         font-family: 'Montserrat'; 
+        padding: 5px 0;
+        border-bottom: 1px solid #cacaca;
+        transition: all 1.8s ease;
+
+        &:focus {
+            outline: none;
+            border-bottom: 3px solid #00cb79;
+        }
     }
     &__number {
         grid-column: number-s/number-e;
@@ -104,6 +120,9 @@
         padding-top: 8%;
         color: white;
         font-family: 'Montserrat';
+        height: 25px;
+        width: 30px;
+        
     }
 }
 
