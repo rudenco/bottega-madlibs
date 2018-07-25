@@ -7,8 +7,21 @@ const INITIAL_STATE =  {
     color: '',
     pluralNoun: '',
     adjectiveOne: '',
+    adjectiveTwo: '',
+    adjectiveThree: '',
+    adjectiveFour: '',
+    adjectiveFive: '',
     celebOne: '',
-    contentVisible: false
+    celebTwo: '',
+    celebThree: '',
+    celebFour: '',
+    nounOne: '',
+    nounTwo: '',
+    nounThree: '',
+    celebThree: '',
+    numberOne: '',
+    numberTwo: '',
+    contentVisible: true
 }
 
 class Card extends Component {

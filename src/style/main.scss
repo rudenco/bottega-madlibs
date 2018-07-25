@@ -124,16 +124,18 @@
         margin-bottom: 84px;
         
         &__label {
-            height: 25px;
-            width : 25px;
+            height: 18px;
+            width : 18px;
             background-color:black;
             border-radius: 50%;
             font-family: 'Montserrat';
-            font-size: 18px;
+            font-size: 14px;
             line-height: 22px;
             color: white;
             text-align: center;
-            padding-top: 4px;
+            //padding-top: 4px;
+            display: inline-block;
+            margin: 4px;
         }
 
         p {
